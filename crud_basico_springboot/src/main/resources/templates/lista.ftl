@@ -18,11 +18,11 @@
      </table>
      <#list lista as es>
         <tr>
-            <td>${es.matricula}</td>
+            <td>${es.matricula?long?c}</td>
             <td>${es.nombre}</td>
             <td>${es.telefono}</td>
-            <td><a href="/estudiante/${es.matricula}">Editar</a></td>
-            <td><a href="/estudiante/eliminar/${es.matricula}">Borrar</a></td>
+            <td><a href="/estudiante/${es.matricula?long?c}">Editar</a></td>
+            <td><a href="/estudiante/eliminar/${es.matricula?long?c}">Borrar</a></td>
         </tr>
      </#list>
 </body>
